@@ -22,6 +22,10 @@ namespace WebApi.Controllers
 
 
         // GET api/values
+        /// <summary>
+        /// Ispis svih spojeva
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<string> Get()
         {
             string json = null;
@@ -38,6 +42,10 @@ namespace WebApi.Controllers
         }
 
         // POST api/all
+        /// <summary>
+        /// Ispis svih spojeva
+        /// </summary>
+        /// <returns></returns>
         [HttpPost]
         [Route("api/all")]
         public IEnumerable<string> Post()
@@ -57,6 +65,11 @@ namespace WebApi.Controllers
         }
 
         // POST api/tip 
+        /// <summary>
+        /// Ispis svih spojeva prema tipu
+        /// </summary>
+        /// <param name="tip"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("api/tip")]
         public IEnumerable<string> Post([FromBody]string tip)

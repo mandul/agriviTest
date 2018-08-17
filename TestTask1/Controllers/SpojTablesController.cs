@@ -124,6 +124,11 @@ namespace TestTask1.Controllers
             return RedirectToAction("Index");
         }
 
+        /// <summary>
+        /// Provjera na barem 2 elementa
+        /// </summary>
+        /// <param name="kemSpoj"></param>
+        /// <returns></returns>
         private bool CheckElements(SpojTable kemSpoj)
         {
             int noVodik = kemSpoj.Vodik.HasValue ? 1 : 0;
